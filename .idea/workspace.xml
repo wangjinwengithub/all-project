@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c556dca-786b-4985-af5f-11f5f384fa95" name="Default" comment="" />
+    <list default="true" id="3c556dca-786b-4985-af5f-11f5f384fa95" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../daka-plantform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../daka-plantform/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
@@ -94,8 +96,8 @@
       <file leaf-file-name="WebSocketConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../daka-plantform/web/src/main/java/com/daka/web/config/WebSocketConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="322">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,6 +211,40 @@
               <item name="daka-plantform" type="b2602c69:ProjectViewProjectNode" />
               <item name="daka-plantform" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="daka-plantform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daka-plantform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daka-plantform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daka-plantform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daka-plantform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daka-plantform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daka-plantform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daka-plantform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daka-plantform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daka-plantform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -223,7 +259,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../daka-plantform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../git_reposity" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -318,7 +354,7 @@
       <updated>1558868873030</updated>
       <workItem from="1558868877176" duration="3974000" />
       <workItem from="1559029778761" duration="13384000" />
-      <workItem from="1559098404226" duration="219000" />
+      <workItem from="1559098404226" duration="854000" />
     </task>
     <task id="LOCAL-00001" summary="初次上传">
       <created>1559043898870</created>
@@ -327,17 +363,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559043898871</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初次上传">
+      <created>1559098805762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559098805762</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17641000" />
+    <option name="totallyTimeSpent" value="18212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.32872927" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -356,7 +399,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3301105" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24869792" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24869792" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -709,8 +752,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../daka-plantform/web/src/main/java/com/daka/web/config/WebSocketConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="322">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

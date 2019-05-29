@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../daka-plantform" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../git_reposity" vcs="Git" />
   </component>
 </project>
