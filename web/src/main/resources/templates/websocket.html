@@ -76,6 +76,7 @@
                 $("#logout").show();
             };
             websocket.onmessage = function(evnt) {
+                console.log(event);
                 $("#msg").html($("#msg").html() + "<br/>" + evnt.data);
             };
             websocket.onerror = function(evnt) {

@@ -5,6 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @SpringBootApplication
 @EnableDubbo
 @EnableHystrix

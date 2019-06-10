@@ -21,6 +21,7 @@ public class WebSocketServer extends TextWebSocketHandler{
 		return format.format(date);
 	}
 
+	//建立链接时调用此方法
 	@Override
 	public void afterConnectionEstablished(WebSocketSession session) throws Exception {
 		String uri = session.getUri().toString();
@@ -34,6 +35,8 @@ public class WebSocketServer extends TextWebSocketHandler{
 		broadcast(new TextMessage(message));
 	}
 
+
+	//发消息时调用此方法
 	@Override
 	public void handleMessage(WebSocketSession session, WebSocketMessage<?> message) throws Exception {
 		String msg = "【" + connections.get(session) + "】" + getDatetime(new Date()) + " : " + message.getPayload();

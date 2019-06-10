@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html >
+<head lang="zh">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>打卡测试页面</title>
+</head>
+<body>
+
+<h3>欢迎来到打卡界面，点击按钮开始打卡</h3>
+<h2></h2>
+<input type="text" class="ids" value="请输入">
+<input type="button" class="daka_button" value="打卡">
+
+<div class="daka" style="width: 400px;height: 400px;background-color: #67b168;display: none">
+    快来打卡打卡！
+</div>
+<script type="text/javascript">
+    $(function () {
+
+        var isKiss='0';
+        var websocket;
+        var userName='小明'+Math.random();
+        //建立连接
+        function connection() {
+
+            var host = window.location.host;
+            if ('WebSocket' in window) {
+                websocket = new WebSocket("ws://" + host +
+                    "/daka/" + userName);
+            } else if ('MozWebSocket' in window) {
+                websocket = new MozWebSocket("ws://" + host +
+                    "/daka/" + userName);
+            }
+            websocket.onopen = function(event) {
+                $("h2").html(userName+"链接服务器成功!")
+                console.log(event);
+
+            };
+            websocket.onmessage = function(evnt) {
+                //console.log(evnt.data);
+                var dataJson=JSON.parse(evnt.data);
+                console.log(dataJson.user+"===" + dataJson.status);
+                if(dataJson.user == userName){
+                    return;
+                }
+                if(dataJson.user != userName && isKiss=='1' && dataJson.status=='1'){
+                    alert('打卡成功!');
+                    isKiss='1';
+                    send();
+                }
+                console.log("自己："+userName+"===" + isKiss);
+                if(dataJson.user != userName && isKiss=='0' && dataJson.status=='1'){
+                    console.log("显示框！")
+                    $(".daka").show();
+                }
+
+                if(dataJson.user != userName && isKiss=='0' && dataJson.status=='0'){
+                    $(".daka").hide();
+                }
+
+
+            };
+            websocket.onerror = function(evnt) {
+                $("h2").html("报错!")
+            };
+            websocket.onclose = function(evnt) {
+                $("h2").html(event.data+"与服务器断开了链接!");
+                console.log("断开连接");
+            }
+        }
+        //链接websocket
+        connection();
+
+        //发送消息
+        function send() {
+            if (websocket != null) {
+               /* var $message = $(".ids");
+                var data = $message.val();
+                if (data == null || data == "") {
+                    return;
+                }*/
+                var data=isKiss;
+                websocket.send(data);
+               // $message.val("");
+            } else {
+                alert('未与服务器链接.');
+            }
+        }
+
+        //鼠标按下时间
+        $(".daka_button").on('mousedown',function () {
+            isKiss='1';
+            $(".daka").show();
+            send();
+        })
+
+        $(".daka_button").on('mouseup',function () {
+            //websocket.close(); //关闭TCP连接
+            isKiss='0';
+            console.log("手放开！")
+            $(".daka").hide();
+            send();
+        })
+    })
+
+
+</script>
+</body>
+</html>

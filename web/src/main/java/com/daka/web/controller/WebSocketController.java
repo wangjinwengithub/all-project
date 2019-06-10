@@ -11,4 +11,9 @@ public class WebSocketController {
         System.out.print("收到请求！！！！！！！！！！");
         return "websocket";
     }
+
+    @RequestMapping("/dakas")
+    public String daka(){
+        return "daka";
+    }
 }
