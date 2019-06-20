@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 @SpringBootApplication
 /** 现在还没有配置数据源，加上该注解，让spring先不加载数据源**/
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @EnableDubbo(scanBasePackages = "com.daka.core")
 @EnableHystrix
 public class CoreApplication {

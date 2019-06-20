@@ -48,9 +48,10 @@
                     return;
                 }
                 if(dataJson.user != userName && isKiss=='1' && dataJson.status=='1'){
-                    alert('打卡成功!');
                     isKiss='1';
                     send();
+                    alert('打卡成功!');
+
                 }
                 console.log("自己："+userName+"===" + isKiss);
                 if(dataJson.user != userName && isKiss=='0' && dataJson.status=='1'){
@@ -101,7 +102,6 @@
         $(".daka_button").on('mouseup',function () {
             //websocket.close(); //关闭TCP连接
             isKiss='0';
-            console.log("手放开！")
             $(".daka").hide();
             send();
         })
